@@ -1,0 +1,9 @@
+Exception in thread "Thread-7" java.lang.RuntimeException: java.util.ConcurrentModificationException
+	at com.jonhu.app.controllers.ControllerManager.lambda$null$2(ControllerManager.java:60)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:911)
+	at java.util.ArrayList$Itr.next(ArrayList.java:861)
+	at com.jonhu.core.builder.document.DocumentBuilder.addText(DocumentBuilder.java:50)
+	at com.jonhu.core.builder.ConvertingTask.start(SwitchTask.java:59)
+	at com.jonhu.app.controllers.ControllerManager.lambda$null$2(ControllerManager.java:58)

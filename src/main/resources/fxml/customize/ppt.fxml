@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jonhu.app.controllers.PptOutputController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label styleClass="label-text" text="请完成PPT转换相关设置:">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="27.0" prefWidth="590.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" styleClass="label-text" text="添加动画" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label styleClass="label-text" text="请选择动画类型" />
+                  <ComboBox fx:id="comboBox" editable="true" prefWidth="150.0" promptText="默认:CheckBox" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

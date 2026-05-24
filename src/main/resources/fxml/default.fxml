@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXTranslationButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jonhu.app.controllers.DefaultController">
+<children>
+    <VBox prefWidth="600.0">
+        <children>
+            <Label styleClass="label-text" text="1. 选择输入/输出文件/目录">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Label>
+            <VBox>
+                <children>
+                    <Label prefHeight="25.0" styleClass="label-text" text="选择待转换的文件:(输入或者从计算机中选择,多个文件用换行隔开即可):">
+                        <VBox.margin>
+                            <Insets left="20.0" />
+                        </VBox.margin>
+                    </Label>
+                    <TextArea fx:id="srcPathsInput" prefHeight="125.0" prefWidth="510.0" styleClass="input-area">
+                        <VBox.margin>
+                            <Insets left="40.0" right="50.0" />
+                        </VBox.margin>
+                    </TextArea>
+                  <RXTranslationButton maxHeight="35.0" minHeight="35.0" onMouseClicked="#onChooseFileFromComputerAction" prefHeight="35.0" prefWidth="150.0" styleClass="button" text="从计算机中选择">
+                     <VBox.margin>
+                        <Insets left="225.0" right="225.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/OpenFromFolder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RXTranslationButton>
+                    <Label prefHeight="25.0" styleClass="label-text" text="选择输出目录(输入或者从文件夹中选择):">
+                        <VBox.margin>
+                            <Insets left="20.0" />
+                        </VBox.margin>
+                    </Label>
+                    <TextField fx:id="destPathInput" prefHeight="20.0" prefWidth="550.0" styleClass="input-field">
+                        <VBox.margin>
+                            <Insets left="40.0" right="50.0" />
+                        </VBox.margin>
+                    </TextField>
+                  <RXTranslationButton layoutX="235.0" layoutY="185.0" maxHeight="35.0" minHeight="35.0" onMouseClicked="#onChooseDirFromComputerAction" prefHeight="35.0" prefWidth="150.0" styleClass="button" text="从计算机中选择">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="225.0" right="225.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/OpenFromFolder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RXTranslationButton>
+                </children>
+            </VBox>
+            <Button mnemonicParsing="false" onMouseClicked="#onNextAction" prefWidth="100.0" text="&gt;&gt;Next">
+               <VBox.margin>
+                  <Insets left="490.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+        </children>
+    </VBox>
+</children>
+</AnchorPane>

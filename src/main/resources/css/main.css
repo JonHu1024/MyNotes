@@ -1,0 +1,46 @@
+//新版
+.label-text {
+    -fx-text-fill:blue;
+    -fx-background-color:transparent;
+    -fx-font-family:Microsoft YaHei;
+    -fx-font-size:18;
+}
+
+.input-field {
+    -fx-background-color:transparent;
+    -fx-font-family:Calibri Light;
+    -fx-font-style:italic;
+    -fx-text-fill:white;
+    -fx-border-color:linear-gradient(to right,#7c4ade,#3ab1fd,white);
+    -fx-border-width:2;
+    -fx-font-size:16;
+}
+
+.input-area {
+    -fx-background-color:transparent;
+    -fx-font-family:Calibri Light;
+    -fx-font-style:italic;
+    -fx-font-size:16;
+    -fx-border-color:linear-gradient(to right,#7c4ade,#3ab1fd,white);
+}
+
+.welcome-button {
+    -fx-background-color:linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #23d0f3ff 0.0%, #d791f9ff 50.0%, #fe7b84ff 100.0%);
+    -fx-font-family:Microsoft YaHei;
+    -fx-font-size:30;
+}
+
+.button {
+    -fx-background-color:linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #23d0f3ff 0.0%, #d791f9ff 50.0%, #fe7b84ff 100.0%);
+    -fx-font-family:Microsoft YaHei;
+    -fx-text-fill:#ffd3d3;
+    -fx-font-size:18;
+}
+
+.pane {
+    -fx-background-color:linear-gradient(to left,#7c4ade,#3ab1fd,white);
+}
+
+.image-view {
+
+}
