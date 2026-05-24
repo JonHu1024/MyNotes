@@ -11,3 +11,7 @@ MyNotes Series can provide you with enough solutions about taking notes.
 
 
 # 2. Getting Start
+
+
+# 最新说明
+- 此项目已经停止维护(在AI时代下已经没什么必要了),上文是搞高中写下的.再次特别留作纪念,不再修改.
