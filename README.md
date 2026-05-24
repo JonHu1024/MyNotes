@@ -14,7 +14,7 @@ MyNotes Series can provide you with enough solutions about taking notes.
 
 
 # 最新说明
-- 此项目已经停止维护(在AI时代下已经没什么必要了),上文是本人高中写下的说明(MyNotes1.0~1.3文档是初中写的,MyNotesBuilder程序是高一和高二的暑假写的,后来源代码部分丢失,时代又发展进步,就没再继续了),在此特别留作纪念,不再修改,也就不再使用`jlink`打包发行了.
+- 此项目已经停止维护(在AI时代下已经没什么必要了),上文是本人高中写下的说明(MyNotes1.0~1.3文档是初中写的,MyNotesBuilder程序是高一和高二的暑假写的,后来源代码部分丢失,时代又发展进步,就没再继续了),在此特别留作纪念,作为我钟爱Java最直接的证据(),不再修改,也就不再使用`jlink`打包发行了.
 - 技术栈(现在应该看不懂了吧() ):
   1. JavaFX(OpenJFX)
   2. Apache POI
